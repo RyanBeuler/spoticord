@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "Ryan Beuler",
   "license": "ISC",
+  "engines": {
+    "node": "8.9.1"
+  },
   "dependencies": {
     "discord.io": "^2.5.3",
     "discord.js": "^11.2.1",
