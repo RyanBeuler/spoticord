@@ -1,0 +1,17 @@
+{
+  "name": "spoticord",
+  "version": "1.0.0",
+  "description": "custom Spotify bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ryan Beuler",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.2.1",
+    "winston": "^2.4.0"
+  }
+}
