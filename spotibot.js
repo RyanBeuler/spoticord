@@ -45,15 +45,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Pong!'
                 });
             case 'play':
-
                 Spotify.login(username, password, function (err, spotify) {
                   if (err) throw err;
-
                   // first get a "Track" instance from the track URI
                   spotify.get(uri, function (err, track) {
                     if (err) throw err;
                     console.log('Playing: %s - %s', track.artist[0].name, track.name);
-
                     // play() returns a readable stream of MP3 audio data
                     track.play()
                       .pipe(new lame.Decoder())
